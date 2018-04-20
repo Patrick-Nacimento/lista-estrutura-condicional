@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 
-public class Exercicio10{
+public class Exercicio11{
     public static void main(String[] args){
 
         int numero01 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
@@ -9,11 +9,13 @@ public class Exercicio10{
         int numero03 = Integer.parseInt(JOptionPane.showInputDialog("Digite terceiro numero"));
         int numero04 = Integer.parseInt(JOptionPane.showInputDialog("Digite quarto numero"));
 
-        if(numero01 == numero02 && numero03 == numero04){
-            JOptionPane.showMessageDialog(null, "É um quadrado");
+        if(numero01 == numero02){
+            if(numero03 == numero04){
+                JOptionPane.showMessageDialog(null, "É um retângulo");
         }else {
-            JOptionPane.showMessageDialog(null, "Não é um quadrado");
-        }
+            JOptionPane.showMessageDialog(null, "Não é um retângulo");
 
+          }
+        }
     }
-}  
+}
